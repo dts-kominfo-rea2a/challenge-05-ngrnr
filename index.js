@@ -1,11 +1,11 @@
 const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
+
 // TODO: Fungsi utama
 // Menerima 2 parameter: list nama dan callback sort
 // Mengembalikan array of string dengan format:
 // "1. Nama"
 // "2. Nama"
 // ...
-const sorter = null;
 const sorter = (names,sort) => {
   let fun = sort(names);
   nameOfString = [];
@@ -17,7 +17,6 @@ const sorter = (names,sort) => {
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
 // mengembalikan array yang sudah diurutkan
-const sortAscending = null;
 const sortAscending= (names) => {
   return names.sort();
 };
@@ -25,8 +24,6 @@ console.log(sortAscending(names));
 
 // TODO: Fungsi untuk mengurutkan array of string secara descending
 // mengembalikan array yang sudah diurutkan
-const sortDescending = null;
-
 const sortDescending = (names) => {
   return names.sort().reverse();
 };
@@ -36,6 +33,7 @@ console.log(sortDescending(names));
   console.log(sorter?.(names, sortAscending)?.join("\n"));
   console.log(sorter?.(names, sortDescending)?.join("\n"));
 })();
+
 module.exports = {
   sorter,
   sortAscending,
